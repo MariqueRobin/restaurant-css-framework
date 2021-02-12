@@ -51,8 +51,16 @@ h1{
     padding: 22.5rem 0;
 }
 
+img{
+   height: 35rem;
+}
 
+/* Photos avec slider */
 
+.photo{
+    padding-top: 2.2rem;
+    padding-bottom: 2rem;
+}
 
 
 
