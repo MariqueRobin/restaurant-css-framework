@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque !important; 
+}
+
+#brochette{
+    background-image: url(../img/barbecue.jpg); 
+    background-size: cover;
+    background-position-y: center;
+    height: 100vh;
+}
+
+h1{
+    padding: 25% 0;
+    font-size: 3rem;
+    color: red;
+    text-align: center;
+}
+
+#sizing_section{
+    height: 80vh;
+}
+
+footer{
+    height: 15vh;
+}
