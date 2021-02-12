@@ -5,26 +5,39 @@
 
 body{
     background-color: bisque !important; 
+    /* background-image: url(../img/mouth-removebg-preview_5.png); */
 }
 
 #brochette{
     background-image: url(../img/barbecue.jpg); 
     background-size: cover;
     background-position-y: center;
-    height: 100vh;
+    height: 85vh;
+}
+
+header a:hover{
+    color:yellow !important;
+}
+nav i:hover{
+    color: tomato !important;
 }
 
 h1{
-    padding: 25% 0;
-    font-size: 3rem;
-    color: red;
-    text-align: center;
+    padding: 22.5rem 0;
+}
+
+i{
+    color: brown;
 }
 
 #sizing_section{
     height: 80vh;
 }
 
+.justifier{
+    text-align: justify;
+}
+
 footer{
-    height: 15vh;
+    width: auto !important;
 }
