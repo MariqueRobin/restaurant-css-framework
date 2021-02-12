@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="./src/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
     <title>Mouthonnerie</title>
 </head>
 <body>
-    <header class="">
+    <!-- Mais quel beau header avec sa belle nav par contre il y a pas encore de burger :!\ RESPONSIVITE -->
+    <header class="font">
         <nav class="navbar navbar-expand-md bg-gradient bg-dark">
             <a href="#"><i class="fas fa-drumstick-bite fa-3x m-2"></i></a>
             <ul class="navbar-nav container-fluid m-2">
@@ -23,52 +26,61 @@
             </ul>
         </nav>
     </header>
-    <section id="brochette">
+    <!-- Première section avec backgroudn image + nom resto -->
+    <section class="font" id="bbq">
         <h1 class="text-center text-danger fw-bold">La Mouthonnerie</h1>  
     </section>
+    <!-- Deuxième section avec un container et des cards, donnant accès a uen vidéo + 2 cadres d'info (sur allergie et FCUK VEGAN) -->
     <section class="jumbotron mb-5 container d-flex flex-column justify-content-center" id="imgAccueilRipaille">
         <div class="d-flex flex-column text-center">
-            <h2 class="fs-1 w-75 py-2 text-dark mx-auto">Bienvenue dans la Mouthonnerie, vous en resterez bouches beeeh !</h2>
+            <h2 class="fs-1 w-75 py-2 text-dark mx-auto font">Bienvenue dans la Mouthonnerie, vous en resterez bouches beeeeeh !</h2>
+            <!-- VIDEO -->
             <div class="text-center">
-                <iframe width="700" height="400" src="https://www.youtube.com/embed/1xsyDVlUFpo?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="700" height="400" src="https://www.youtube.com/embed/1xsyDVlUFpo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p class="text-dark fs-3">Un pour tous et tous pour le Mouthon!</p>
+            <p class="text-dark fs-2 font my-2">Un pour tous et tous pour le Mouthon!</p>
         </div>
         <div class="d-flex flex-wrap justify-content-around">
-            <div class="card border-info shadow-lg" style="width: 20rem;">
+            <div class="card border-info shadow-lg  my-2" style="width: 20rem;">
                 <i class="bg-warning bg-gradient py-2 text-center fas fa-shield-virus fa-3x"></i>
                 <div class="card-body  bg-secondary">
-                    <h5 class="card-title text-info text-center">Allergie</h5>
+                    <!-- Card1: Allergie -->
+                    <h5 class="card-title text-info text-center font">Allergie</h5>
                     <p class="card-text text-info justifier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptate repellat excepturi unde amet eius quod quam animi vel illum eaque, ipsa et sunt. Unde aperiam omnis temporibus facilis debitis!</p>
-                    <a href="#" class="btn btn-primary text-dark rounded-pill">More info</a>
+                    <a href="#" class="btn btn-primary text-dark rounded-pill font">More info</a>
                 </div>
             </div>
-            <div class="card border-info shadow-lg" style="width: 20rem;">
+            <div class="card border-info shadow-lg my-2" style="width: 20rem;">
                 <i class="bg-warning bg-gradient py-2 text-center fas fa-carrot fa-3x"></i>
                 <div class="card-body  bg-secondary">
-                    <h5 class="card-title text-info text-center">Fuck vegan</h5>
+                    <!-- Card2: FUCK VEGAN -->
+                    <h5 class="card-title text-info text-center font">Fuck vegan</h5>
                     <p class="card-text text-info justifier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aperiam laboriosam quas! Optio explicabo dolor ut quas modi ullam alias nulla nostrum ratione, dolore accusantium neque earum, possimus beatae atque.</p>
-                    <a href="./src/pages/Carte.html" class="btn btn-primary text-dark rounded-pill">Menu</a>
+                    <a href="./src/pages/Carte.html" class="btn btn-primary text-dark rounded-pill font">Menu</a>
                 </div>
             </div>
         </div>       
     </section>
+    <!-- Troisième section: container avec deux cards de "News" -->
     <section class="mb-5 container d-flex justify-content-center bg-secondary border-info rounded-circle shadow-lg">
-        <div class="card bg-secondary rounded-circle border-0" style="width: 40rem;">
+        <div class="card bg-secondary rounded-circle border-0 w-50">
           <div class="card-body">
-            <h5 class="card-title text-warning">News :</h5>
+            <h5 class="card-title text-warning font">News :</h5>
+            <!-- Qu'il est bon mon nouveau burger -->
             <p class="card-text text-info">On vous présente le tout nouveau MouthBurger! Disponible que durant 2 semaines!</p>
-            <a href="./src/pages/Carte.html" class="card-link text-white">Vers mon burger!</a>
+            <a href="./src/pages/Carte.html" class="card-link text-white font">Vers mon burger!</a>
           </div>
           <hr class="w-75 m-auto border border-dark border-4">
           <div class="card-body">
+              <!-- Encore ces vegans..... -->
             <p class="card-text text-info">Bon aller, on a bien rit, voici le nouveau menu pour les vegans !</p>
-            <a href="./src/pages/Carte.html" class="card-link text-white">Fuck vegan?</a>
+            <a href="./src/pages/Carte.html" class="card-link text-white font">Fuck vegan?</a>
           </div>
         </div>
-  </section>
+    </section>
+    <!-- Rien de mieux qu'un footer pour finir ma page -->
     <footer class="card-footer bg-gradient bg-dark py-3 fs-4">
-        <p class="text-warning text-center">Mouthonerie &copy; 2021</p>
+        <p class="text-warning text-center font">Mouthonerie &copy; 2021</p>
     </footer>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>

@@ -1,37 +1,31 @@
+/* Remise à 0 */
 *{
     margin: 0;
     padding: 0;
 }
-
+/* Instalation couleur et image en Background */
 body{
     background-color: bisque !important; 
-    /* background-image: url(../img/mouth-removebg-preview_5.png); */
+    background-image: url(../img/mouth-removebg-preview_5.png);
+    background-position-y: 6rem;
+}
+/* Installation de la fotn spéciale qui ne s'applique pas partout */
+.font{
+    font-family: 'Lobster', cursive !important;
 }
 
-#brochette{
-    background-image: url(../img/barbecue.jpg); 
-    background-size: cover;
-    background-position-y: center;
-    height: 85vh;
-}
+/* Commun à mes pages */
 
 header a:hover{
     color:yellow !important;
 }
+
 nav i:hover{
     color: tomato !important;
 }
 
-h1{
-    padding: 22.5rem 0;
-}
-
 i{
     color: brown;
-}
-
-#sizing_section{
-    height: 80vh;
 }
 
 .justifier{
@@ -41,3 +35,46 @@ i{
 footer{
     width: auto !important;
 }
+
+/*Page Accueil*/
+
+/* Section 1 */
+
+#bbq{
+    background-image: url(../img/barbecue.jpg); 
+    background-size: cover;
+    background-position-y: center;
+    height: 85vh;
+}
+
+h1{
+    padding: 22.5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE */
+
+@media screen and (max-width: 600px){
+    h1{
+        padding: 11.75rem 0;
+    }
+    iframe{
+        height:175px;
+        width:300px;
+    }
+}
+
+
+
